@@ -86,3 +86,11 @@ $ cd /home/linuxbrew/.linuxbrew/Cellar/apache-zeppelin/0.8.0/bin
 ```
 * start your zeppelin exactly as *Step 4*
 * If you are kind of lazy, you might consider add an `alias` for your `cd` command
+
+## Reference
+* Day accessed: 2018/08/02 (in `yyyy/mm/dd` format)
+* [locally install zeppelin on MacOS](https://dziganto.github.io/anaconda/shiro/spark/zeppelin/zeppelinhub/How-To-Locally-Install-Apache-Spark-And-Zeppelin/)
+* [use brew on ubuntu](https://stackoverflow.com/questions/33353618/can-i-use-brew-on-ubuntu)
+* [add a alias](https://superuser.com/questions/167221/can-i-add-a-shortcut-to-replace-a-path-in-linux)
+* [install java on ubuntu, ref. 1](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04)
+* [install java on ubuntu, ref. 2](https://poweruphosting.com/blog/install-java-ubuntu/)
