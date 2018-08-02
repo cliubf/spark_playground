@@ -39,7 +39,7 @@ In this part, you can see how powerful brew is.
 ### Requirement
 * Scala
 * Spark
-* Zeppelini
+* Zeppelin
 ### Command to run
 Note that run the following **Line by Line**
 ```shell
