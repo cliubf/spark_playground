@@ -1,0 +1,87 @@
+\documentclass[a4paper, 12pt]{article}
+    \usepackage{mathptmx}
+    \usepackage{comment}
+    \usepackage{fullpage}
+    \usepackage{minted}
+    \usemintedstyle{borland}
+    \renewcommand{\baselinestretch}{2.0}
+
+    \begin{document}
+    \linespread{1.5}
+
+    \begin{center}
+        \Huge\textbf{Local Configuration with Spark and Example Usage}\\
+        \large\textit{Chengzhong LIU}\\
+        \normalsize\textbf{Supervisor: Prof. WANG Yu-Hsing}\\
+        \normalsize\textbf{Co-Supervisor: Dr. Tan Pin Siang}
+    \end{center}
+
+    \section*{Abstract}
+    Example of a Citation\cite[p.219]{Robotics}. Here's Another Citation\cite{Flueck}
+    
+    \section*{Installation of Apache Zeppelin on Ubuntu}
+    Apache Zeppelin is one of the most powerful Spark interactive shell and widely used for research groups
+    around the globe and currently supported with numerous popular interpreters\cite{Zeppelin}. However, 
+    the installation of Zeppelin on local computer is not a easy work and it is easy to lost to those who
+    are new to Spark or Linux. So hereby, I would like to introduce a way to easily install Zeppelin on 
+    Ubuntu system (either on dual system or virtual machine). In my case, I have a virtual machine installed
+    with Ubuntu, provided by VMWare\cite{VMWare}. If you are working on the UROP project in HKUST, a 60-days
+    free trial should be enough. Otherwise, you might consider using VirtualBox\cite{VirtualBox} instead.\\
+    \\
+    Make sure your local computer have fulfill these prerequisites:
+    \begin{itemize}
+        \item Ubuntu system on virtual machine / dual boot system
+        \item Only paste the command after \$ sign to your shell
+    \end{itemize}
+
+    \normalsize\textit{Step 1: Install homebrew}
+    \begin{itemize}
+        \item Initiate your ubuntu system.
+        \item Press Ctrl + Alt + T to open a terminal.
+        \item Paste the following command into it.
+        \mint{bash}|\$ sudo apt install linuxbrew-wrapper|
+        \item Then press Enter.
+        \item The installation should be complete quite shortly
+    \end{itemize}
+
+
+    \section*{Installation of Jupyter Notebook with Spark on Windows}
+    sdlkfkj
+    
+    \section*{Failed Attempts}
+    klsdkfj
+    
+    \section*{Introduction to Spark Usage (on Jupyter)}
+    kdjfslkfj
+    % to comment sections out, use the command \ifx and \fi. Use
+    %  \ifx
+    %   \begin{itemize}
+    %       \item item1
+    %       \item item2
+    %   \end{itemize}   
+    %  \fi
+    
+    \section*{The Pipeline of Analysis}
+    lksfjklsd
+    
+    \section*{Model Construction with MLlib}
+    sdfsdf
+    
+    \section*{Unresolved Problem}
+    lskjdfl
+    
+    \section*{Acknowledgement \& Future Contact}
+    %Make sure to change these
+    Lab Notes, HelloWorld.ic, FooBar.ic
+    %\fi %comment me out
+    
+    \begin{thebibliography}{9}
+    \bibitem{Robotics} Fred G. Martin 
+    \bibitem{Flueck}  Flueck, Alexander J. 2005.
+    August 2005]. Available from World Wide Web: (http://www.ece.iit.edu/~flueck/ece100).
+    \bibitem{Zeppelin} Foundation, T. A. (n.d.). Apache Zeppelin. Retrieved August 3, 2018, from https://zeppelin.apache.org/
+    \bibitem{VMWare} VMware – Official Site. (2018, July 30). Retrieved August 3, 2018, from https://www.vmware.com/
+    \bibitem{VirtualBox} Welcome to VirtualBox.org! (n.d.). Retrieved August 3, 2018, from https://www.virtualbox.org/
+    \end{thebibliography}
+    
+    \end{document}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+s+se}{\PYGZbs{}\PYGZdl{}} sudo apt install linuxbrew\PYGZhy{}wrapper
+\end{Verbatim}
