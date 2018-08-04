@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{correct} \PYG{o}{=} \PYG{n}{predictions}\PYG{o}{.}\PYG{n}{filter}\PYG{p}{(}\PYG{n}{predictions}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}prediction\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYGZbs{}
+    \PYG{n}{predictions}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}target\PYGZdq{}}\PYG{p}{])}\PYG{o}{.}\PYG{n}{select}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}prediction\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}target\PYGZdq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{count}\PYG{p}{()}
+    \PYG{n}{total} \PYG{o}{=} \PYG{n}{predictions}\PYG{o}{.}\PYG{n}{count}\PYG{p}{()}
+    \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}The precision is: \PYGZdq{}}\PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{}\PYGZob{}:.2\PYGZpc{}\PYGZcb{}\PYGZdq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{correct} \PYG{o}{/} \PYG{n}{total}\PYG{p}{))}
+\end{Verbatim}

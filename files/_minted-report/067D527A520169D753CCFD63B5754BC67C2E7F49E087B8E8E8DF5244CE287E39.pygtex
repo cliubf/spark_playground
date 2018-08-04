@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{} use pandas to get\PYGZus{}dummies}
+    \PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k+kn}{as} \PYG{n+nn}{pd}
+    \PYG{n}{pd\PYGZus{}df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{get\PYGZus{}dummies}\PYG{p}{(}\PYG{n}{df}\PYG{o}{.}\PYG{n}{select}\PYG{p}{(}\PYG{o}{*}\PYG{p}{)}\PYG{o}{.}\PYG{n}{toPandas}\PYG{p}{())}
+    \PYG{n}{pd\PYGZus{}df}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{)}
+\end{Verbatim}

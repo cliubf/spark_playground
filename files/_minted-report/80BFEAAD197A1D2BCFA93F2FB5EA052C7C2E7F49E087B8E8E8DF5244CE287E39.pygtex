@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{} load dataset}
+    \PYG{n}{df} \PYG{o}{=} \PYG{n}{spark}\PYG{o}{.}\PYG{n}{read}\PYG{o}{.}\PYG{n}{csv}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}path/to/my\PYGZus{}data.csv\PYGZdq{}}\PYG{p}{,} \PYG{n}{header} \PYG{o}{=} \PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{mode} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}DROPMALFORMED\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{df}\PYG{o}{.}\PYG{n}{count}\PYG{p}{()}
+\end{Verbatim}

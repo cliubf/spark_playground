@@ -23,7 +23,7 @@ jupyter kernelspec list
   * the spark and scala is built-in, but make you have java > 7
   * for running, refer to [here](https://github.com/spark-notebook/spark-notebook/blob/master/docs/quick_start.md)
 
-## [Windows] Run window-ubuntu subsystem to pretend "windows" as linux
+## [Windows] Run Windows Ubuntu subsystem to pretend "windows" as linux
 * status: subsystem is able to take some windows basic task, such as `mkdir`, but cannot function fully like Windows or Ubuntu
 * problem: the ubuntu subsystem did not know about environment variables that set windows; windows powershell commands do not work, while many Linux command do not work as well
 * run powershell as admin to install; for detail guides, please refer at [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10)

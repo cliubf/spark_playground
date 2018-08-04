@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{} get the decision tree}
+    \PYG{n}{dt} \PYG{o}{=} \PYG{n}{DecisionTreeClassifier}\PYG{p}{(}\PYG{n}{labelCol} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}target\PYGZdq{}}\PYG{p}{,} \PYGZbs{}
+    \PYG{n}{featuresCol} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}features\PYGZdq{}}\PYG{p}{,} \PYG{n}{maxDepth} \PYG{o}{=} \PYG{l+m+mi}{7}\PYG{p}{,} \PYGZbs{}
+    \PYG{n}{minInstancesPerNode} \PYG{o}{=} \PYG{l+m+mi}{20}\PYG{p}{,} \PYG{n}{impurity} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}gini\PYGZdq{}}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} train and get the model}
+    \PYG{n}{pipeline} \PYG{o}{=} \PYG{n}{Pipeline}\PYG{p}{(}\PYG{n}{stages} \PYG{o}{=} \PYG{p}{[}\PYG{n}{dt}\PYG{p}{])}
+    \PYG{n}{model} \PYG{o}{=} \PYG{n}{pipeline}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{training\PYGZus{}data}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} get the prediction model}
+    \PYG{n}{predictions} \PYG{o}{=} \PYG{n}{model}\PYG{o}{.}\PYG{n}{transform}\PYG{p}{(}\PYG{n}{testing\PYGZus{}data}\PYG{p}{)}
+\end{Verbatim}

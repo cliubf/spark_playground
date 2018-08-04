@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{} open spark session}
+    \PYG{k+kn}{from} \PYG{n+nn}{pyspark.context} \PYG{k+kn}{import} \PYG{n}{SparkContext}
+    \PYG{k+kn}{from} \PYG{n+nn}{pyspark.sql.session} \PYG{k+kn}{import} \PYG{n}{SparkSession}
+    \PYG{n}{spark} \PYG{o}{=} \PYG{n}{SparkSession}\PYG{p}{(}\PYG{n}{sc}\PYG{p}{)}
+    \PYG{n}{spark}
+\end{Verbatim}

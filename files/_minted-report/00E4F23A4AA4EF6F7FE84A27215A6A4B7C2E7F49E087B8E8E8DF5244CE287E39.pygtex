@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{} import essiential libraries and prepare training and testing datasets}
+    \PYG{k+kn}{from} \PYG{n+nn}{pyspark.ml} \PYG{k+kn}{import} \PYG{n}{Pipeline}
+    \PYG{k+kn}{from} \PYG{n+nn}{pyspark.ml.classification} \PYG{k+kn}{import} \PYG{n}{DecisionTreeClassifier}
+    \PYG{k+kn}{from} \PYG{n+nn}{pyspark.ml.feature} \PYG{k+kn}{import} \PYG{n}{VectorAssembler}\PYG{p}{,} \PYG{n}{StringIndexer}\PYG{p}{,} \PYG{n}{VectorIndexer}
+    \PYG{n}{assembler} \PYG{o}{=} \PYG{n}{VectorAssembler}\PYG{p}{(}\PYG{n}{inputCols} \PYG{o}{=} \PYG{n}{feature\PYGZus{}col}\PYG{p}{,} \PYG{n}{outputCol} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}features\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{assembled} \PYG{o}{=} \PYG{n}{assembler}\PYG{o}{.}\PYG{n}{transform}\PYG{p}{(}\PYG{n}{df}\PYG{p}{)}
+    \PYG{p}{(}\PYG{n}{training\PYGZus{}data}\PYG{p}{,} \PYG{n}{testing\PYGZus{}data}\PYG{p}{)} \PYG{o}{=} \PYG{n}{assembled}\PYG{o}{.}\PYG{n}{randomSplit}\PYG{p}{([}\PYG{l+m+mf}{0.8}\PYG{p}{,} \PYG{l+m+mf}{0.2}\PYG{p}{],} \PYG{n}{seed} \PYG{o}{=} \PYG{l+m+mi}{13234}\PYG{p}{)}
+    \PYG{n}{training\PYGZus{}data}\PYG{o}{.}\PYG{n}{count}\PYG{p}{(),} \PYG{n}{testing\PYGZus{}data}\PYG{o}{.}\PYG{n}{count}\PYG{p}{()}
+\end{Verbatim}

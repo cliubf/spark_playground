@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{} no error}
+    \PYG{n}{df1}\PYG{o}{.}\PYG{n}{count}\PYG{p}{()}
+    \PYG{c+c1}{\PYGZsh{} no error}
+    \PYG{n}{df2}\PYG{o}{.}\PYG{n}{count}\PYG{p}{()}
+    \PYG{c+c1}{\PYGZsh{} error occurs here}
+    \PYG{n}{df1}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{df2}\PYG{p}{)}\PYG{o}{.}\PYG{n}{count}\PYG{p}{()}
+\end{Verbatim}
