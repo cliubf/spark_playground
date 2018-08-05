@@ -16,6 +16,7 @@ If you find some mistakes or points worthy to mention or improve, please, do not
 * [Jupyter notebook on Windows](local_spark_setup/jupyter_windows.md)
 * [Zeppelin on MacOS](https://dziganto.github.io/anaconda/shiro/spark/zeppelin/zeppelinhub/How-To-Locally-Install-Apache-Spark-And-Zeppelin/)
   * I did not try out this on mac; however, on Ubuntu, the same pipeline worked.
+* [Failed attempts](local_spark_setup/failed_cases.md)
 
 ## Spark MLlib mini project
 * [Comprehensive pipeline of analysis](notebooks/attrition_comprehensive.ipynb)
